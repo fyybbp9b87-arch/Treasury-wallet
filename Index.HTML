@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UMN Owner Treasury</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>UMN Treasury</h1>
+
+<div class="card">
+
+<h2>Send Rewards</h2>
+
+<input id="citizen" placeholder="Citizen ID">
+
+<select id="type">
+<option value="crowns">Crowns 👑</option>
+<option value="seeds">Seeds 🌱</option>
+</select>
+
+<input id="amount" type="number" placeholder="Amount">
+
+<input id="reason" placeholder="Reason">
+
+<button onclick="sendReward()">Send Reward</button>
+
+</div>
+
+<div class="card">
+
+<h2>Treasury Balance</h2>
+
+<p>Crowns 👑: <span id="crownBalance">10000</span></p>
+
+<p>Seeds 🌱: <span id="seedBalance">50000</span></p>
+
+</div>
+
+<div class="card">
+
+<h2>Reward History</h2>
+
+<div id="history"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
